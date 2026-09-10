@@ -17,9 +17,9 @@ public class Main {
         frota.add(new Moto("Suzuki", "GSX"));
         frota.add(new Moto("Yamaha", "R15"));
 
-        for (int i=0; i < frota.size(); i++){
-            frota.get(i).exibirDados();
-            frota.get(i).calcularAutonomia(30);
+        for (Veiculo veiculo : frota) {
+            veiculo.exibirDados();
+            veiculo.calcularAutonomia(30);
         }
     }
 }
