@@ -23,14 +23,17 @@ public class Main {
         }
 
         System.out.println("Exercício 3:");
+        System.out.println("-".repeat(20));
 
         Veiculo esportivo1 = new Carro("Nissan", "Skyline R32", 50);
         Veiculo esportivo2 = new Moto("Honda", "CBR", 15);
 
-        esportivo1.getKmLitro();
+        esportivo1.calcularAutonomia(60.0);
         esportivo1.calcularTaxaManutencao();
+        System.out.println("-".repeat(20));
 
-        esportivo2.getKmLitro();
+        esportivo2.calcularAutonomia(60.0);
         esportivo2.calcularTaxaManutencao();
+        System.out.println("-".repeat(20));
     }
 }

@@ -36,7 +36,6 @@ public abstract class Veiculo {
                 + kilometragem + " km com "
                 + litrosValidos
                 + " litros.");
-        System.out.println("-".repeat(20));
         return kilometragem;
     }
 
