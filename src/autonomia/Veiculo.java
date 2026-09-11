@@ -5,7 +5,7 @@ public abstract class Veiculo {
     private final String modelo;
     private final double capacidadeTanque;
 
-    public Veiculo(String marca, String modelo, double capacidadeTanque){
+    public Veiculo(String marca, String modelo, double capacidadeTanque) {
         this.marca = marca;
         this.modelo = modelo;
         this.capacidadeTanque = capacidadeTanque;
@@ -15,18 +15,18 @@ public abstract class Veiculo {
         return modelo;
     }
 
-    public void exibirDados(){
+    public void exibirDados() {
         System.out.println(this.marca);
         System.out.println(this.modelo);
         System.out.println(this.capacidadeTanque);
     }
 
-    public double calcularAutonomia(double litros){
+    public double calcularAutonomia(double litros) {
         double litrosValidos = litros;
 
-        if (litros > capacidadeTanque){
+        if (litros > capacidadeTanque) {
             System.out.println("Capacidade do tanque excedida.");
-            litrosValidos  = capacidadeTanque;
+            litrosValidos = capacidadeTanque;
         }
 
         double kilometragem = litrosValidos * getKmLitro();
@@ -41,5 +41,6 @@ public abstract class Veiculo {
     }
 
     public abstract double getKmLitro();
+
     public abstract double calcularTaxaManutencao();
 }

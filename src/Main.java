@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Veiculo carro1 = new Carro("Honda","NSX",40);
+        Veiculo carro1 = new Carro("Honda", "NSX", 40);
         carro1.exibirDados();
         carro1.calcularAutonomia(40);
 
