@@ -7,15 +7,15 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Veiculo carro1 = new Carro("Honda","NSX");
+        Veiculo carro1 = new Carro("Honda","NSX",40);
         carro1.exibirDados();
         carro1.calcularAutonomia(40);
 
         List<Veiculo> frota = new ArrayList<>();
-        frota.add(new Carro("Honda", "Civic Type R"));
-        frota.add(new Carro("Mitsubishi", "Lancer EVO"));
-        frota.add(new Moto("Suzuki", "GSX"));
-        frota.add(new Moto("Yamaha", "R15"));
+        frota.add(new Carro("Honda", "Civic Type R", 25));
+        frota.add(new Carro("Mitsubishi", "Lancer EVO", 30));
+        frota.add(new Moto("Suzuki", "GSX", 17));
+        frota.add(new Moto("Yamaha", "R15", 19));
 
         for (Veiculo veiculo : frota) {
             veiculo.exibirDados();

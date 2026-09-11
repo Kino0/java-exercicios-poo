@@ -2,8 +2,8 @@ package autonomia;
 
 public class Moto extends Veiculo{
 
-    public Moto(String marca, String modelo) {
-        super(marca, modelo);
+    public Moto(String marca, String modelo, double capacidadeTanque) {
+        super(marca, modelo, capacidadeTanque);
     }
 
     @Override
