@@ -21,5 +21,14 @@ public abstract class Veiculo {
         System.out.println(this.capacidadeTanque);
     }
 
-    public abstract double calcularAutonomia(double litros);
+    public double calcularAutonomia(double litros){
+        if (litros > capacidadeTanque){
+            System.out.println("Capacidade do tanque excedida.");
+            litros = capacidadeTanque;
+        } return litros;
+    }
+
+    public abstract double getKmLitro();
+
+    public abstract double calcularTaxaManutencao();
 }
