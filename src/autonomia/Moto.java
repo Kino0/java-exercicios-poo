@@ -14,7 +14,7 @@ public class Moto extends Veiculo {
     @Override
     public double calcularTaxaManutencao() {
         double taxa = 500.0;
-        System.out.println("Taxa de manutenção do Carro (" + getModelo() + "): R$" + taxa);
+        System.out.println("Taxa de manutenção da Moto (" + getModelo() + "): R$" + taxa);
         return taxa;
     }
 }
