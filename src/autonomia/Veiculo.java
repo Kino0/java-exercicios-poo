@@ -22,13 +22,24 @@ public abstract class Veiculo {
     }
 
     public double calcularAutonomia(double litros){
+        double litrosValidos = litros;
+
         if (litros > capacidadeTanque){
             System.out.println("Capacidade do tanque excedida.");
-            litros = capacidadeTanque;
-        } return litros;
+            litrosValidos  = capacidadeTanque;
+        }
+
+        double kilometragem = litrosValidos * getKmLitro();
+        System.out.println("O veículo "
+                + getModelo() +
+                " tem autonomia de "
+                + kilometragem + " km com "
+                + litrosValidos
+                + " litros.");
+        System.out.println("-".repeat(20));
+        return kilometragem;
     }
 
     public abstract double getKmLitro();
-
     public abstract double calcularTaxaManutencao();
 }
