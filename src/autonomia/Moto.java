@@ -18,5 +18,9 @@ public class Moto extends Veiculo{
 
     @Override
     public double getKmLitro(){ return 15.0; }
-    public double calcularTaxaManutencao(){ return 25.0; }
+    public double calcularTaxaManutencao(){
+        double taxa = 200.0;
+        System.out.println("Taxa de serviço: R$" + taxa);
+        return 200.0;
+    }
 }

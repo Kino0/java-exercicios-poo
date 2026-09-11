@@ -21,5 +21,16 @@ public class Main {
             veiculo.exibirDados();
             veiculo.calcularAutonomia(30);
         }
+
+        System.out.println("Exercício 3:");
+
+        Veiculo esportivo1 = new Carro("Nissan", "Skyline R32", 50);
+        Veiculo esportivo2 = new Moto("Honda", "CBR", 15);
+
+        esportivo1.calcularAutonomia(60.0);
+        esportivo1.calcularTaxaManutencao();
+
+        esportivo2.calcularAutonomia(60.0);
+        esportivo2.calcularTaxaManutencao();
     }
 }

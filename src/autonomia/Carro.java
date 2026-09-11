@@ -18,5 +18,9 @@ public class Carro extends Veiculo {
 
     @Override
     public double getKmLitro(){ return 12.0; }
-    public double calcularTaxaManutencao(){ return 25.0; }
+    public double calcularTaxaManutencao(){
+        double taxa = 500.0;
+        System.out.println("Taxa de serviço: R$" + taxa);
+        return 500.0;
+    }
 }
